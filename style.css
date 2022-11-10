@@ -1,77 +1,121 @@
 * {
+    padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    font-weight: 400;
 }
 
-body {
-   
+
+*, input, button {
     font-family: 'League Spartan', sans-serif;
-    background-color: black;
+    background-color:  #121214;
+    color: #FFFFFF; 
+   
+}
+
+main {
+    display: flex;
+    align-items: stretch;
+    height: calc(100vh);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
+    gap: 50px;
+    margin-top: 42px;
+    padding: 0 36px;
+    padding-right: 100px;
+}
+
+.content__logo {
+    padding-bottom: 50px;
+}
+
+.logo__image {
+    min-height: 94px;
+    max-height: 94px;
+}
+
+.content__header {
+    display: flex;
+    flex-direction: column;
+}
+
+.content__header h2 {
+    font-size: 24px;
+    color: #08C05E;
+}
+
+.content__header p {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.content__header-strong {
+    font-weight: 700;
+    margin: 9px 0;
+}
+
+.content__header-text {
+    font-weight: 200;
+}
+
+.hero {
+    flex: 3;
+    background-image: url("./assets/read_news.jpg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content__form {
+    display: flex;
+    flex-direction: column;
     position: relative;
+
+    height: 72px;  
 }
 
-.logo {
-    width: 389px;
-    height: 94px;
-    margin: 50px 0px 0px 30px;
-}
-
-.img_news {
-    width: 1175px;
-    height: 784px;
-    margin-left: 376px;
-}
-
-.main {
-    margin-left: 36px;
+.content__form label {
     color: #A8A8A8;
+}
+
+.content__form__input {
+    display: flex;
     position: absolute;
-    top: 145px;
-    min-height: calc(100vh -150px);
-    background-color: black;
-    padding-top: 200px;
+    top: 25px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.8);
 }
 
-h2 {
-    color: #04D361;
-}
-
-strong {
-    color: white;
-}
-
-.pesquisa {
-    margin-top: 45px;
-}
-
-input {
-    width: 750px;
+.content__form__input input {
+    width: 698px;
     height: 48px;
-    border: 0;
-    border-left: 5px #04D361 solid;
+    border: transparent;
+    border-left: 5px solid #08C05E;
+    background-color: white;
+    color: #121214;
+    outline: none;
+    padding-left: 1rem;
 }
 
-.email {
+.content__form__input button {
+    width: 48px;
+    height: 48px;
+    background-color: #8257E5;
+    border: #8257E5;
+}
+
+.content__form__button {
+    background-color: #8257E5;
+    fill: red;
+}
+
+
+.content__footer p {
     display: flex;
     align-items: center;
+    color: #8257E5;
 }
-
-button {
-    border: 0;
-    background-color: #8257e5;
-    width: 50px;
-    height: 50px;
-}
-
-.button {
-    background-color: #8257e5;
-}
-
-footer {
-    margin-top: 50px;
-    margin-bottom: 234px;
-}
-
-.ler {
-    color: #8257e5;
-}
-

@@ -1,40 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;500&display=swap" rel="stylesheet">
+    
+    <title>Rocket news</title>
 </head>
+
 <body>
-    <img class="logo" src="./assets/logo.svg" alt="logo">
+    <main>
+        <div class="content">
+            <header class="content__logo">
+                <img class="logo__image" src="./assets/logo.svg" alt="logo">
+            </header>
 
-    <img class="img_news" src="./assets/read_news.jpg" alt="read_news">
-    <div class="main">
-        <h2>atualize ideias e informações em 5 minutos.</h2>
-        <p>
-            <strong>tudo que você precisa saber para começar seu dia bem informado</strong>
-        </p>
-        <p>noticias sobre o universo Rocketseat, e tudo o que precisa começar o dia melhor.</p>
-        <p>perfeito para se preparar para codar ☕ </p>
-
-        <div class="pesquisa">
-            <label for="Email">Insira seu e-mail:</label>
-            <br>
-            <div class="email">
-                <input type="email" id="Email" placeholder="oi@rocketseat.com">
-                <button><img class="button" src="./assets/send.svg" alt="button"></button>
+            <div class="content__header">
+                <h2>atualize ideias e informações em 5 minutos.</h2>
+            
+                <p class="content__header-strong">tudo que você precisa saber para começar seu dia bem informado</p>
+                <p class="content__header-text">noticias sobre o universo Rocketseat, e tudo o que precisa começar o dia melhor.</p>
+                <p class="content__header-text">perfeito para se preparar para codar ☕ </p>
             </div>
+
+            <form class="content__form">
+                <label for="inputEmail">Insira seu e-mail:</label>
+                <div class="content__form__input">
+                    <input type="email" id="inputEmail" placeholder="oi@rocketseat.com">
+
+                <button><img class="content__form__button" src="./assets/send.svg" alt="button"></button>
+                </div>
+            </form>
+
+            <footer class="content__footer">
+                <p>
+                    Deixe-me ler primeiro 
+                    <img class="arrow" src="./assets/arrow-right.svg" alt="arrow">
+                </p>
+            </footer>
         </div>
 
-        <footer>
-            <p class="ler">deixe-me ler primeiro <img class="arrow" src="./assets/arrow-right.svg" alt="arrow"></p>
-        </footer>
-    </div>
+        <aside class="hero">
+    </main>
 </body>
 </html>
